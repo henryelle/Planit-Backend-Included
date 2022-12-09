@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HELP</title>
+    <base href="/user/">
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@2.27.0/dist/full.css" rel="stylesheet" type="text/css" />
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2/dist/tailwind.min.css" rel="stylesheet" type="text/css" />
+    <link rel="stylesheet" href="../style/help.css">
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+Mono&display=swap" rel="stylesheet">
+    <script type="text/javascript" src="../scripts/script.js"></script>
+    <script type="text/javascript" src="../app.js"></script>
+</head>
+
+<body>
+    <div class="navbar bg-base-100">
+        <a href="index.html" class="logo" alt="Logo"></a>
+        <a class="btn m-4" id="calendar" href="./calendar.html">Calendar</a>
+        <a class="btn m-4" id="tracker" href="./planits.html">Tracker</a>
+    </div>
+
+    <div class="calendar-page">
+        <h1 class="title"><i>CALENDAR PAGE</i></h1>
+        <h4 class="info">Select a date on the calendar to pull up tasks:</h4>
+        <img class="calendar-help1" src="/../images/calendar.PNG" alt="calendar-help1"/>
+        <h4 class="info">To create a new task, select a date and click the "add" button:</h4>
+        <img class="calendar-help1" src="/../images/calendar1.PNG" alt="calendar-help2"/>
+
+        <h1 class="title-2"><i>TRACKER PAGE</i></h1>
+        <h4 class="info">
+            To create a new planit, first select if it's a habit or goal. 
+            Then, select the planet theme you would like from the dropdown.
+            Lastly, name your planit. Then, click the "create planit" button. 
+            Your planit should appear on the right. 
+        </h4>
+        <img class="tracker-help1" src="/../images/tracker1.PNG" alt="tracker-help1"/>
+        <h4 class="info">
+            Hover over your planit graphic for 2 seconds to see the planit name. 
+            Double-click on your planit graphic to display the notes section. 
+            Add notes corresponding to that planit. Double-click anytime to display the planit's notes.
+        </h4>
+        <img class="tracker-help1" id="tracker-img" src="/../images/tracker.PNG" alt="tracker-help2"/>
+    </div>
+
+</body>
+</html>

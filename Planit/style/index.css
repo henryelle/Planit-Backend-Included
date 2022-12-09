@@ -1,0 +1,258 @@
+body:before {
+    content:"";
+	position:fixed;
+	left:0;
+	top:0;
+	right:0;
+	bottom:0;
+	z-index:-1;
+	display:block;
+    background-image: url("../images/backgroundV4.gif");
+    background-color:#050113;
+    background-position: center;
+    background-size: cover;
+}
+
+.navbar {
+    background-color: rgba(0, 0, 0, 0);
+    padding-top: 1.1em;
+}
+
+.flex-1 {
+    height: 100px;
+}
+
+.btn {
+    border: none;
+}
+
+.logo {
+    height: 5em;
+    width: 100%;
+    padding-top: 5em;
+    margin-left: 1em;
+    background: url("../images/logo.svg") no-repeat;
+}
+
+.logo:hover {
+    background: url("../images/logoHover.svg") no-repeat;
+}
+
+.m-4 {
+    padding-bottom: 10px;
+    color: #d3e0ea;
+    background: url("../images/buttonWhite.svg") no-repeat;
+}
+
+.m-4:hover {
+    color: #deecde;
+    background: url("../images/buttonGreen.svg") no-repeat;
+}
+
+.container1, .container2 {
+    font-family: 'Noto Sans Mono', monospace;
+    color: #e0f1ff;
+}
+
+.container1 {
+    position: relative;
+    padding-top: 8%;
+    padding-bottom: 8%;
+    overflow: hidden;
+    text-align: center;
+}
+
+.textContainer {
+    position: relative;
+}
+
+.welcometo {
+    position: relative;
+    font-size: 2em;
+}
+
+.planitu {
+    position: relative;
+    font-size: 4em;
+}
+
+.slogan {
+    position: relative;
+    margin-bottom: 1%;
+    font-size: 1em;
+}
+
+@keyframes floatingAstronautAnimation {
+    from {
+        margin-top: 10%;
+        margin-left: 100%;
+        width: 10%;
+        opacity: 100%;
+    }
+    85% {
+        opacity: 100%;
+    }
+    to {
+        margin-left: 50%;
+        width: 4%;
+        opacity: 0%;
+    }
+}
+
+.imageContainer1 {
+    position: absolute;
+    z-index: 0;
+    animation-name: floatingAstronautAnimation;
+    animation-duration: 14s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+}
+
+.container2 {
+    position: relative;
+    margin: 5% 5%;
+}
+
+.row {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    width: 100%;
+    height: 650px;
+  }
+
+.column1 {
+    display: flex;
+    flex-direction: column;
+    flex-basis: 100%;
+    flex: 1;
+    width: 100%;
+    min-width: 0;
+    margin-right: 2%;
+    background: url("/../images/homeBox.svg") center center;
+    background-repeat: no-repeat;
+    background-size: contain;
+    margin: 0 auto;
+    justify-content: center;
+    font-size: 1vw;
+}
+
+.description {
+    padding: 8% 10% 3% 12%;
+}
+
+.learnButton {
+    text-align: center;
+    margin: 10px auto;
+    margin-left: 38%;
+    padding: 4px 6px;
+    border: 1px outset;
+    border-color: #A7CBE8;
+    font-size: 1vw;
+    font-family: 'Noto Sans Mono', monospace;
+    color: #e0f1ff;
+}
+
+.learnButton:hover {
+    border: 1px inset;
+    border-color: #81F57C;
+    color: #81F57C;
+}
+
+.column2 {
+    display: flex;
+    flex-direction: column;
+    flex-basis: 100%;
+    flex: 1;
+    height: 70%;
+    margin: auto;
+    margin-left: 2%;
+    background: url("../images/solarsystem.svg") center center;
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+
+.homeArt {
+    width: 100%;
+    height: 100%;
+    margin: 0 auto;
+}
+
+.ack > h2, .ack > h3 {
+    display: block;
+    margin-left: 0;
+    margin-right: 0;
+    text-align: center;
+}
+
+.ack > h3 {
+    padding-bottom: 50px;
+}
+
+
+
+
+
+
+
+
+/* SCREEN SIZE CHANGE EXCEPT I SUCK*/
+@media screen and (max-width: 750px) {
+    .container1 {
+        margin-top: 10%;
+        margin-bottom: 10%;
+    }
+
+    .welcometo {
+        font-size: 1.2em;
+    }
+    
+    .planitu {
+        font-size: 3.2em;
+    }
+    
+    .slogan {
+        font-size: 0.5em;
+    }
+
+    .row {
+        flex-direction: column;
+        height: auto;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .column1 {
+        flex-direction: column;
+        font-size: 2vw;
+        height: auto;
+        background-size: contain;
+    }
+
+    .description {
+        margin: 5% 5% 5% 5%;
+        padding: 10% 18% 5% 18%;
+    }
+
+    .learnButton {
+        font-size: 2vw;
+    }
+
+    .column2 {
+        flex-direction: row;
+        margin: auto;
+        width: 80%;
+    }
+
+    .homeArt {
+        height: 300px;
+    }
+
+    .ack > h2, .ack > h3 {
+        font-size: 0.8em;
+    }
+    
+    .ack > h3 {
+        padding-bottom: 30px;
+    }
+}

@@ -1,0 +1,132 @@
+body:before {
+    content:"";
+	position:fixed;
+	left:0;
+	top:0;
+	right:0;
+	bottom:0;
+	z-index:-1;
+	display:block;
+    background-image: url("../images/backgroundV4.gif");
+    background-color:#050113;
+    background-position: center;
+    background-size: cover;
+}
+
+.text {
+    color:#e0f1ff;
+}
+
+.navbar {
+    background-color: rgba(0, 0, 0, 0);
+}
+
+.welcome, .name, .small {
+    font-family: 'Noto Sans Mono', monospace;
+}
+
+.welcome {
+    font-size: 2em;
+}
+
+.name {
+    font-size: 4em;
+}
+
+.small {
+    font-size: 1em;
+}
+
+.container {
+    display: flex;
+    align-items: center;
+    justify-content: left;
+}
+  
+.planet {
+    padding: 30px;
+    margin: 15px;
+    width: 50%;
+    max-width: 40%;
+    margin-left: 16em;
+}
+
+.planet:hover{
+    -webkit-transform: rotate(360deg);
+    -webkit-transition-duration: 3s;
+    -webkit-transition-delay: now;
+    -webkit-animation-timing-function: linear;
+    -webkit-animation-iteration-count: infinite;
+    transform: rotate(360deg);
+    transition-duration: 3s;
+    transition-delay: now;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;   
+}
+  
+.text {
+    font-size: 16px;
+}
+
+.title-div {
+    margin-top: 5em;
+}
+
+.btn {
+    border: none;
+}
+
+.flex-1 {
+    height: 100px;
+}
+
+.logo {
+    height: 5em;
+    width: 7%;
+    margin-left: 1em;
+    background: url("../images/logo.svg") no-repeat;
+}
+
+#text {
+    width:35%;
+}
+
+.logo:hover {
+    background: url("../images/logoHover.svg") no-repeat;
+}
+
+.m-4 {
+    padding-bottom: 10px;
+    color: #d3e0ea;
+    background: url("../images/buttonWhite.svg") no-repeat;
+}
+
+.m-4:hover {
+    color: #deecde;
+    background: url("../images/buttonGreen.svg") no-repeat;
+}
+
+#signout:hover {
+    color: #e9d8d5;
+    background: url("../images/buttonRed.svg") no-repeat;
+}
+
+.ground-img{
+    height: 50%;
+}
+
+.ack {
+    padding-top: 10px;
+    background-color: #726a56;
+}
+
+.ack > h2, .ack > h3 {
+    display: block;
+    margin-left: 0;
+    margin-right: 0;
+    text-align: center;
+}
+
+.ack > h3 {
+    padding-bottom: 40px;
+}
